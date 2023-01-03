@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const env = require("dotenv");
 
+const port = process.env.PORT || 3001;
+
 env.config();
 
 const app = express();
@@ -10,6 +12,6 @@ app.use(express.json());
 
 require("../src/routes/index")(app);
 
-app.listen(3001);
+app.listen(port);
 
-console.log("http://localhost:3001");
+console.log(port);
