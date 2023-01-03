@@ -4,7 +4,7 @@ const {
   getId,
   update,
   exclude,
-  test
+  teste
 } = require("../controllers/user.controller");
 
 exports.userRoutes = (app) => {
