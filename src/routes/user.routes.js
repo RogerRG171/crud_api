@@ -4,6 +4,7 @@ const {
   getId,
   update,
   exclude,
+  test
 } = require("../controllers/user.controller");
 
 exports.userRoutes = (app) => {
@@ -12,4 +13,5 @@ exports.userRoutes = (app) => {
   app.get("/user", get);
   app.get("/user/:id", getId);
   app.delete("/user/:id", exclude);
+  app.get("/teste", teste);
 };
