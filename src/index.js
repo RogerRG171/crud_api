@@ -15,3 +15,6 @@ require("../src/routes/index")(app);
 app.listen(port);
 
 console.log(port);
+
+const t = process.env.DATABASE_URL;
+console.log(t);
