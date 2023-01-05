@@ -56,11 +56,3 @@ exports.exclude = async (req, res) => {
     res.status(404).send(error);
   }
 };
-
-exports.teste = async (req, res) => {
-  try {
-    res.status(200).send("teste executado com sucesso!!!");
-  } catch (error) {
-    res.status(404).send("deu kakinha ", error);
-  }
-};
